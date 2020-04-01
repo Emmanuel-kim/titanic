@@ -103,8 +103,8 @@ passenger id, ticket  and the cabin  will be dropped because the
 As we discovered from eda that age and embarked had some missing values we will fill the values missing  in age with the median age and in the embarked with "S" for southampton 
 code below
 
-![](/age.png?raw=true)
-![](/embarked.png?raw=true)
+![](/age.png)
+![](/embarked.png)
 
 
 
@@ -122,16 +122,16 @@ data['Fare_log1p'] = log_transformation(data['Fare'])
 
 ### check the data
 data.describe()
-![Alt text](/home/jahson/Desktop/project/check.png?raw=true)
+![Alt text](/check.png)
 
 
 ### draw histogram after log transformation and compare
  
-![](/farelog.png?raw=true)
+![](/farelog.png)
 
 ### One hot encoding for categorical features 
 used to transform the categorical features into numbers.
-![](/encode.png?raw=true)
+![](/encode.png)
 
 ### Model training and evaluation
 
@@ -139,7 +139,7 @@ we will use the yellowbrick package since it can wrap the model and create good 
 we will split the set in to two  i.e traing dataset to train the model and validation data set to evaluate the model
 
 
-![](/training.png?raw=true)
+![](/training.png)
 
 ### model training and evaluation visualization using yellowbrick
 To do the training and the evaluation visualization, we will use the logistic algorithm .  here we will use the evaluation metrics  : 
@@ -150,14 +150,14 @@ To do the training and the evaluation visualization, we will use the logistic al
 
 ## confusion matrix
 _here we will be able to predict and compute the acuracy score_
-![](/confusionmatrix.png?raw=true)
+![](/confusionmatrix.png)
 
 
 we see that the accuracy of the model is (158+68)/(158+24+18+68) = 84.33%.  which is much higher than the random guess 50.00%
 
 ## Precision, Recall and F1 Score
 _Here we can generate a classification report_
-![](/precision.png?raw=true)
+![](/precision.png)
 
 The precision, recall, and F1 score result further confirmed that the model is performing relatively well.
 
@@ -165,7 +165,7 @@ The precision, recall, and F1 score result further confirmed that the model is p
 ## ROC Curve and AUC
 _Evaluation here is done using a ROC curve_
 
-![](/roccurve.png?raw=true)
+![](/roccurve.png)
 In the ROC Curve above, the dotted diagonal line in the pictures shows when the result is randomly guessed. A good model should be above that line.
 
 
