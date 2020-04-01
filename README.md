@@ -27,7 +27,7 @@ This shows that we have 891 rows and 12 columns. The rows represent the passager
 
 if we take a look at the first 5 rows 
 `` data.head()``
-![Alt text](/home/jahson/Desktop/project/head.png?raw=true "first 5 rows")
+![](/head.png )
 
 when we look at the 5 rows we see that the data is a mixture of numerical ( passenger id, survived, pclass, age, sibsp, parch and fare) and categorical data(sex, cabin, embarked) and text data(name, ticket)
 
@@ -48,14 +48,14 @@ There some questions that we should answer then we answer them with figures and 
 ### understanding the variables
 
 if we check the summary of the data  (data.describe())   we see things like the  average, mean, ,standard deviation, min and max values.
-![Alt text](/home/jahson/Desktop/project/describe.png?raw=true)
+![](describe.png)
  However from the count of data we see that there are values missing in the age column  714 instead of 891
-![Alt text](/home/jahson/Desktop/project/include.png?raw=true)
+![](/include.png)
 we also see the categorical data like in 'sex' there are only 2 categories i.e male and female
 
 ## Histograms for the numerical variables (AGE, SIBSP, PARCH and FARE)
 
-![Alt text](/home/jahson/Desktop/project/hist.png?raw=true)
+![](/hist.png)
 from the histogram we see that most of the passegers are in the age of 20 and 30 years old and dont have siblings with them. 
 a large amount of tickets sold were less than $50 meaning many were in the economy class as well as travelling to the closest destination
 
@@ -63,25 +63,25 @@ a large amount of tickets sold were less than $50 meaning many were in the econo
 
 ### barplot for the categorical data  i.e survived,  sex, pclasss and embarked    
 code below
-![Alt text](/home/jahson/Desktop/project/bar.png?raw=true)
+![](/bar.png)
 from the bar plot we see that there were more male than female 
 many were traveling to southampton as well as many were in the 3rd class. and many did ont survive
 
 
 ### Are the numerical data correlated
 to see if there is correlation of  numerical values we will create a pearson ranking visualization where we see that the correlation between the variables was low (<0.5)
-![Alt text](/home/jahson/Desktop/project/pearson.png?raw=true)
+![](/pearson.png)
 
 
 ### Differences in the distribution of the numerical values among the survived and not survived 
 to see if there are significant differences we are using the parallel coordinates visualization
-![Alt text](/home/jahson/Desktop/project/parallel.png?raw=true)
+![](/parallel.png)
 from the output we see that the passegers with more siblings have a higher death rate.And those that paid a higher fare had a higher survival rate.
 
 
 ### Difference in survival rates for the categorical data using the  faceted stacked bar plot.
 
-![Alt text](/home/jahson/Desktop/project/barplot.png?raw=true)
+![](/barplot.png)
  from the plots,  more females survived than men and death rate is much higher in the 3rd class and embarkation from southampton port. 
 
 
@@ -103,8 +103,8 @@ passenger id, ticket  and the cabin  will be dropped because the
 As we discovered from eda that age and embarked had some missing values we will fill the values missing  in age with the median age and in the embarked with "S" for southampton 
 code below
 
-![Alt text](/home/jahson/Desktop/project/age.png?raw=true)
-![Alt text](/home/jahson/Desktop/project/embarked.png?raw=true)
+![](/age.png?raw=true)
+![](/embarked.png?raw=true)
 
 
 
@@ -127,11 +127,11 @@ data.describe()
 
 ### draw histogram after log transformation and compare
  
-![Alt text](/home/jahson/Desktop/project/farelog.png?raw=true)
+![](/farelog.png?raw=true)
 
 ### One hot encoding for categorical features 
 used to transform the categorical features into numbers.
-![Alt text](/home/jahson/Desktop/project/encode.png?raw=true)
+![](/encode.png?raw=true)
 
 ### Model training and evaluation
 
@@ -139,7 +139,7 @@ we will use the yellowbrick package since it can wrap the model and create good 
 we will split the set in to two  i.e traing dataset to train the model and validation data set to evaluate the model
 
 
-![Alt text](/home/jahson/Desktop/project/training.png?raw=true)
+![](/training.png?raw=true)
 
 ### model training and evaluation visualization using yellowbrick
 To do the training and the evaluation visualization, we will use the logistic algorithm .  here we will use the evaluation metrics  : 
@@ -150,14 +150,14 @@ To do the training and the evaluation visualization, we will use the logistic al
 
 ## confusion matrix
 _here we will be able to predict and compute the acuracy score_
-![Alt text](/home/jahson/Desktop/project/confusionmatrix.png?raw=true)
+![](/confusionmatrix.png?raw=true)
 
 
 we see that the accuracy of the model is (158+68)/(158+24+18+68) = 84.33%.  which is much higher than the random guess 50.00%
 
 ## Precision, Recall and F1 Score
 _Here we can generate a classification report_
-![Alt text](/home/jahson/Desktop/datascience project/precision.png?raw=true)
+![](/precision.png?raw=true)
 
 The precision, recall, and F1 score result further confirmed that the model is performing relatively well.
 
@@ -165,7 +165,7 @@ The precision, recall, and F1 score result further confirmed that the model is p
 ## ROC Curve and AUC
 _Evaluation here is done using a ROC curve_
 
-![Alt text](/home/jahson/Desktop/project/roccurve.png?raw=true)
+![](/roccurve.png?raw=true)
 In the ROC Curve above, the dotted diagonal line in the pictures shows when the result is randomly guessed. A good model should be above that line.
 
 
