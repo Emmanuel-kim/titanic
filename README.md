@@ -1,4 +1,5 @@
 # Titanic Project
+<<<<<<< HEAD
 
 
 ## Case Study
@@ -6,6 +7,11 @@
 
 who would survive in the titanic accident
 ## titanic dataset from kaggle
+=======
+### Case Study
+who would survive in the titanic accident
+#### Titanic dataset from kaggle
+>>>>>>> 30b8bfb922bb00fbc19033c73c521846b9b39f79
 we will get the dataset from  [Titanic dataset](https://www.kaggle.com/c/titanic/data) you can dowload it from kaggle.com
 
 after downloading the dataset, you will need to extract it to the same folder as your ipython notebook file
